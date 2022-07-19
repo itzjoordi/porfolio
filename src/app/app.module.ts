@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     MainComponent,
     AboutMeComponent,
     ExperienceComponent,
@@ -21,7 +20,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ContactComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AngularFullpageModule],
   providers: [],
   bootstrap: [AppComponent],
 })

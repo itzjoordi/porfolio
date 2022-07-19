@@ -1,3 +1,5 @@
+@import "~fullpage.js/dist/fullpage.min.css";
+
 body * {
   font-family: "Martel Sans", sans-serif;
 }
@@ -23,7 +25,4 @@ html {
   @media (max-width: 992px) {
     margin-bottom: 30px;
   }
-}
-.background {
-  background-color: #f5f5f5;
 }
