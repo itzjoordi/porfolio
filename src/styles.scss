@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~fullpage.js/dist/fullpage.min.css";
+
+body * {
+  font-family: "Martel Sans", sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  .header__header {
+    color: #444649;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    border-bottom: 4px solid;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,63 @@
+.animation-area {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .header-title {
+    line-height: 2 !important;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.653);
+    @media (max-width: 768px) {
+      font-size: 2.6752rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 2rem !important;
+    }
+    @media (max-width: 400px) {
+      font-size: 1.3376rem !important;
+    }
+
+    .color-name {
+      color: rgba(0, 0, 0, 0.653);
+      font-size: 3.3rem;
+      font-weight: bold;
+      @media (max-width: 768px) {
+        font-weight: 600;
+        font-size: 2.8888rem !important;
+      }
+      @media (max-width: 600px) {
+        font-size: 2.2222rem !important;
+      }
+      @media (max-width: 400px) {
+        font-size: 1.5555rem !important;
+      }
+    }
+  }
+  .header-subtitle {
+    line-height: 2 !important;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.653);
+    @media (max-width: 768px) {
+      font-size: 1.6752rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.3376rem !important;
+    }
+    @media (max-width: 400px) {
+      font-size: 1rem !important;
+    }
+  }
+  z-index: 1;
+}
