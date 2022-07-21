@@ -20,13 +20,16 @@
 }
 .profile-img {
   width: 16rem;
+  height: 16rem;
   padding: 0.3rem;
   border-radius: 50%;
   @media (max-width: 992px) {
     width: 14rem;
+    height: 14rem;
   }
   @media (max-width: 576px) {
     width: 10rem;
+    height: 10rem;
   }
 }
 

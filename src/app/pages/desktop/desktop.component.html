@@ -1,0 +1,27 @@
+<ul id="menu" [class.d-none]="isVisible">
+  <li data-menuanchor="start"><a href="#start">Start</a></li>
+  <li data-menuanchor="aboutme"><a href="#aboutme">About me</a></li>
+  <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
+  <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+</ul>
+
+<div
+  fullpage
+  id="fullpage"
+  [options]="config"
+  (ref)="getRef($event)"
+  #fullpageRef
+>
+  <div class="section">
+    <app-main></app-main>
+  </div>
+  <div class="section">
+    <app-about-me></app-about-me>
+  </div>
+  <div class="section">
+    <app-experience></app-experience>
+  </div>
+  <div class="section">
+    <app-contact></app-contact>
+  </div>
+</div>
