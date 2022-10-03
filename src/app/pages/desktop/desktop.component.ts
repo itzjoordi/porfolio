@@ -1,20 +1,15 @@
-import {
-  Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
-  ViewChild,
-} from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { FullpageDirective } from '@fullpage/angular-fullpage/lib/fullpage.directive';
 
 @Component({
   selector: 'app-desktop',
   templateUrl: './desktop.component.html',
   styleUrls: ['./desktop.component.scss'],
 })
-export class DesktopComponent implements OnInit {
+export class DesktopComponent {
   @ViewChild('fullpageRef') fp_directive!: ElementRef;
-  config: any;
-  fullpage_api: any;
+  config: FullpageDirective['options'];
+  fullpage_api: FullpageDirective['fullpage_api'];
 
   get isVisible() {
     if (this.fullpage_api?.getActiveSection().anchor.indexOf('start') >= 0) {
@@ -24,36 +19,13 @@ export class DesktopComponent implements OnInit {
   }
 
   constructor(private renderer: Renderer2) {
-    // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {
-      licenseKey: 'YOUR LICENSE KEY HERE',
+      licenseKey: '6U5K9-R9456-B3IH9-1XK6J-OZRNP',
       anchors: ['start', 'aboutme', 'experience', 'contact'],
       menu: '#menu',
       navigation: true,
-      sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', 'FFFFFF', '#FFFFFF'],
-
-      // events callback
-      afterLoad: (origin: any, destination: any, direction: any) => {
-        // console.log(destination);
-      },
-      afterRender: () => {
-        // console.log('afterRender');
-      },
-      afterResize: (width: any, height: any) => {
-        // console.log('afterResize' + width + ' ' + height);
-      },
-      afterSlideLoad: (
-        section: any,
-        origin: any,
-        destination: any,
-        direction: any
-      ) => {
-        // console.log(destination);
-      },
     };
   }
-
-  ngOnInit(): void {}
 
   getRef(fullPageRef: any) {
     this.fullpage_api = fullPageRef;
