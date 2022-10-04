@@ -20,7 +20,7 @@ export class DesktopComponent {
 
   constructor(private renderer: Renderer2) {
     this.config = {
-      licenseKey: '6U5K9-R9456-B3IH9-1XK6J-OZRNP',
+      licenseKey: '7C2262BC-E6044700-BA605146-B340179C',
       anchors: ['start', 'aboutme', 'experience', 'contact'],
       menu: '#menu',
       navigation: true,
