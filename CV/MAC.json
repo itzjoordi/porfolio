@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.3/schema/schema.json",
   "settings": {
-    "language": "ES",
+    "language": "EN",
     "MACVersion": "0.3"
   },
   "aboutMe": {
@@ -17,8 +17,7 @@
       "location": {
         "country": "España",
         "region": "Cataluña",
-        "municipality": "Barcelona",
-        "notes": "Autocompleted using Google Maps API"
+        "municipality": "Barcelona"
       }
     },
     "relevantLinks": [
@@ -85,20 +84,16 @@
   "knowledge": {
     "languages": [
       {
-        "name": "Catalan",
-        "level": "Native or bilingual proficiency"
+        "name": "Catalan"
       },
       {
-        "name": "English",
-        "level": "Professional working proficiency"
+        "name": "English"
       },
       {
-        "name": "French",
-        "level": "Limited working proficiency"
+        "name": "French"
       },
       {
-        "name": "Spanish",
-        "level": "Native or bilingual proficiency"
+        "name": "Spanish"
       }
     ],
     "hardSkills": [
@@ -246,6 +241,19 @@
           "type": "technology"
         }
       }
+    ],
+    "studies": [
+      {
+        "studyType": "officialDegree",
+        "degreeAchieved": true,
+        "name": "Graduate in Mathematics",
+        "startDate": "2009-09-01",
+        "finishDate": "2014-07-01",
+        "institution": {
+          "name": "Universitat Automona de Barcelona",
+          "description": "Graduate in mathematics"
+        }
+      }
     ]
   },
   "careerPreferences": {
@@ -273,7 +281,6 @@
       "preferredRoles": [
         "Tech Lead"
       ]
-    },
-    "status": "openToOffers"
+    }
   }
 }
