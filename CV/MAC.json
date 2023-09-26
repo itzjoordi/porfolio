@@ -300,12 +300,6 @@
           "type": "technology"
         }
       ],
-      "discardedCompetences": [
-        {
-          "name": "JAVA",
-          "type": "technology"
-        }
-      ],
       "preferredRoles": [
         "Software Architect",
         "Tech Lead"
