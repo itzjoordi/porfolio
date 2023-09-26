@@ -26,7 +26,11 @@
     "jobs": [
       {
         "organization": {
-          "name": "Grupo GFT"
+          "name": "Grupo GFT",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/09/26/b999c1f3-4660-413d-8e3b-9ffda8f3d481_1625125201022.jpeg",
+            "alt": "1625125201022.jpeg"
+          }
         },
         "roles": [
           {
@@ -34,7 +38,25 @@
             "startDate": "2019-09-01",
             "challenges": [
               {
-                "description": "Desarrollo de aplicaciones web de Mercadona"
+                "description": "Desarrollo de aplicaciones web para distintas empresas del sector Retail e Industria. He liderado distintos equipos de entre 2 y 10 personas tanto en el desarrollo Frontend como Backend utilizando Angular+14, Java+SpringBoot y Python."
+              }
+            ],
+            "competences": [
+              {
+                "name": "Angular2+",
+                "type": "technology"
+              },
+              {
+                "name": "JAVA",
+                "type": "technology"
+              },
+              {
+                "name": "Python",
+                "type": "technology"
+              },
+              {
+                "name": "Spring Boot",
+                "type": "technology"
               }
             ]
           }
