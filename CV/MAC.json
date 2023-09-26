@@ -64,7 +64,11 @@
       },
       {
         "organization": {
-          "name": "NTT Data (everis)"
+          "name": "NTT Data (everis)",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/09/26/7185278c-dd43-4cdc-a034-89c3e99f3319_eventt_logo_p_rgb-10.jpeg",
+            "alt": "eventt_logo_p_rgb-1024x682-1.jpeg"
+          }
         },
         "roles": [
           {
@@ -73,7 +77,29 @@
             "finishDate": "2019-08-01",
             "challenges": [
               {
-                "description": "Desarrollo de aplicaciones para los canales web de Banc Sabadell"
+                "description": "Desarrollo de aplicaciones para los canales web de Banc Sabadell."
+              }
+            ],
+            "competences": [
+              {
+                "name": "CSS",
+                "type": "technology"
+              },
+              {
+                "name": "HTML",
+                "type": "technology"
+              },
+              {
+                "name": "JAVA",
+                "type": "technology"
+              },
+              {
+                "name": "JSP",
+                "type": "technology"
+              },
+              {
+                "name": "JavaScript",
+                "type": "technology"
               }
             ]
           }
