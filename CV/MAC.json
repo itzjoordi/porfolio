@@ -148,6 +148,41 @@
           }
         ]
       }
+    ],
+    "publicArtifacts": [
+      {
+        "details": {
+          "name": "Integración de nueva Arquitectura de Frontend en Legacy Framework",
+          "description": "Definición y diseño técnico de un componente capaz de integrar diferentes microfrontends para los canales web del banco dentro de un Framework legacy. Validar, revisar y gestionar nuevas necesidades de todas las integraciones de los diferentes microfrontends desarrollados.",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/09/26/28bd6c59-d0ff-43ba-a47b-59386c71c74a_images.png",
+            "alt": "images.png"
+          }
+        },
+        "type": "achievement",
+        "publishingDate": "2020-03-01",
+        "tags": [
+          "Desarrollo de Software"
+        ],
+        "relatedCompetences": [
+          {
+            "name": "JAVA",
+            "type": "technology"
+          },
+          {
+            "name": "JSP",
+            "type": "technology"
+          },
+          {
+            "name": "JavaScript",
+            "type": "technology"
+          },
+          {
+            "name": "Stencil.js",
+            "type": "technology"
+          }
+        ]
+      }
     ]
   },
   "knowledge": {
