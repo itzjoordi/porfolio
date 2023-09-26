@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.3/schema/schema.json",
   "settings": {
-    "language": "EN",
+    "language": "ES",
     "MACVersion": "0.3"
   },
   "aboutMe": {
@@ -11,21 +11,16 @@
       "title": "Tech Lead en Grupo GFT",
       "description": "Software Developer con amplia experiencia y conocimientos en el desarrollo Frontend. Especialista en la resolución de problemas y trabajo en equipo.",
       "avatar": {
-        "alt": "perfil_jordi_soler.png",
-        "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/22/11/30/c734547d-80a6-40ce-8e9a-d821ee61ef97_perfil_jordi_soler.png"
+        "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/22/11/30/c734547d-80a6-40ce-8e9a-d821ee61ef97_perfil_jordi_soler.png",
+        "alt": "perfil_jordi_soler.png"
       },
       "location": {
+        "notes": "Autocompleted using Google Maps API (id: ChIJ5TCOcRaYpBIRCmZHTz37sEQ)",
         "country": "España",
         "region": "Cataluña",
         "municipality": "Barcelona"
       }
-    },
-    "relevantLinks": [
-      {
-        "type": "linkedin",
-        "URL": "https://www.linkedin.com/in/jordis91/"
-      }
-    ]
+    }
   },
   "experience": {
     "jobs": [
@@ -84,94 +79,26 @@
   "knowledge": {
     "languages": [
       {
-        "name": "Catalan"
+        "name": "CA",
+        "level": "Native or bilingual proficiency"
       },
       {
-        "name": "English"
+        "name": "EN",
+        "level": "Professional working proficiency"
       },
       {
-        "name": "French"
+        "name": "ES",
+        "level": "Native or bilingual proficiency"
       },
       {
-        "name": "Spanish"
+        "name": "FR",
+        "level": "Limited working proficiency"
       }
     ],
     "hardSkills": [
       {
         "skill": {
-          "name": "Invision",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "Gitflow",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "Confluence",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "CSS",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "GitLab",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "Jenkins",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "Figma",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
           "name": "Angular2+",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "Postman",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "SQL",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "PostgreSQL",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "Github",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "Git",
           "type": "technology"
         }
       },
@@ -183,37 +110,79 @@
       },
       {
         "skill": {
-          "name": "Jasmine",
+          "name": "CSS",
           "type": "technology"
         }
       },
       {
         "skill": {
-          "name": "Scss",
+          "name": "Confluence",
           "type": "technology"
         }
       },
       {
         "skill": {
-          "name": "SonarQube",
+          "name": "Figma",
           "type": "technology"
         }
       },
       {
         "skill": {
-          "name": "Kibana",
+          "name": "Git",
           "type": "technology"
         }
       },
       {
         "skill": {
-          "name": "TypeScript",
+          "name": "GitLab",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Gitflow",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Github",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Grafana",
           "type": "technology"
         }
       },
       {
         "skill": {
           "name": "HTML",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Invision",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Jasmine",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "JavaScript",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Jenkins",
           "type": "technology"
         }
       },
@@ -231,13 +200,43 @@
       },
       {
         "skill": {
-          "name": "JavaScript",
+          "name": "Kibana",
           "type": "technology"
         }
       },
       {
         "skill": {
-          "name": "Grafana",
+          "name": "PostgreSQL",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Postman",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "SQL",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Scss",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "SonarQube",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "TypeScript",
           "type": "technology"
         }
       }
@@ -248,10 +247,30 @@
         "degreeAchieved": true,
         "name": "Graduate in Mathematics",
         "startDate": "2009-09-01",
-        "finishDate": "2014-07-01",
         "institution": {
           "name": "Universitat Automona de Barcelona",
           "description": "Graduate in mathematics"
+        },
+        "finishDate": "2014-07-01"
+      }
+    ],
+    "softSkills": [
+      {
+        "skill": {
+          "name": "Capacidad de mentorización",
+          "type": "practice"
+        }
+      },
+      {
+        "skill": {
+          "name": "Pensamiento analítico",
+          "type": "practice"
+        }
+      },
+      {
+        "skill": {
+          "name": "Trabajo en equipo",
+          "type": "practice"
         }
       }
     ]
@@ -260,8 +279,17 @@
     "contact": {
       "publicProfiles": [
         {
-          "type": "linkedin",
-          "URL": "https://www.linkedin.com/in/jordis91/"
+          "URL": "https://www.linkedin.com/in/jordis91/",
+          "type": "linkedin"
+        }
+      ],
+      "contactMails": [
+        "jordi.s91@gmail.com"
+      ],
+      "phoneNumbers": [
+        {
+          "number": "618604954",
+          "countryCode": "+34"
         }
       ]
     },
@@ -281,6 +309,32 @@
       "preferredRoles": [
         "Tech Lead"
       ]
-    }
+    },
+    "status": "openToOffers"
+  },
+  "manfredSpecificData": {
+    "mainStackTechs": [
+      {
+        "name": "Angular2+",
+        "type": "technology"
+      },
+      {
+        "name": "CSS",
+        "type": "technology"
+      },
+      {
+        "name": "HTML",
+        "type": "technology"
+      },
+      {
+        "name": "JavaScript",
+        "type": "technology"
+      },
+      {
+        "name": "TypeScript",
+        "type": "technology"
+      }
+    ],
+    "desiredJobDescription": "I love caring a frontend development team and taking part of the analysis and finding the best solution for each problem. \nIn my working environment I need to have flexibility and family conciliation and I need that all people near me understand that. I hate have a fixed work time."
   }
 }
