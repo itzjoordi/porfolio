@@ -182,6 +182,39 @@
             "type": "technology"
           }
         ]
+      },
+      {
+        "details": {
+          "name": "Desarrollo del proceso venta online de productos bancarios",
+          "description": "Diseño técnico para la implementación de un nuevo modelo totalmente online para la contratación de productos bancarios.\nDesarrollo de diferentes módulos (Web Components) necesarios según cada producto a contratar.",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/09/26/17a2a053-f5ec-44c4-8f16-afbacc9b458a_images.png",
+            "alt": "images.png"
+          }
+        },
+        "type": "achievement",
+        "publishingDate": "2019-06-01",
+        "tags": [
+          "Desarrollo de Software"
+        ],
+        "relatedCompetences": [
+          {
+            "name": "HTML",
+            "type": "technology"
+          },
+          {
+            "name": "JAVA",
+            "type": "technology"
+          },
+          {
+            "name": "JSP",
+            "type": "technology"
+          },
+          {
+            "name": "JavaScript",
+            "type": "technology"
+          }
+        ]
       }
     ]
   },
