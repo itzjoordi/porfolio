@@ -331,12 +331,6 @@
     "softSkills": [
       {
         "skill": {
-          "name": "Capacidad de mentorización",
-          "type": "practice"
-        }
-      },
-      {
-        "skill": {
           "name": "Pensamiento analítico",
           "type": "practice"
         }
