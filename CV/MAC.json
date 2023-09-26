@@ -252,6 +252,12 @@
       },
       {
         "skill": {
+          "name": "Artifactory",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
           "name": "Bitbucket",
           "type": "technology"
         }
@@ -265,6 +271,12 @@
       {
         "skill": {
           "name": "Confluence",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Docker",
           "type": "technology"
         }
       },
@@ -360,6 +372,12 @@
       },
       {
         "skill": {
+          "name": "MongoDB",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
           "name": "PostgreSQL",
           "type": "technology"
         }
@@ -385,6 +403,12 @@
       {
         "skill": {
           "name": "SonarQube",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Xray",
           "type": "technology"
         }
       }
