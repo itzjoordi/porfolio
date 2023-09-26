@@ -170,6 +170,12 @@
       },
       {
         "skill": {
+          "name": "JAVA",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
           "name": "Jasmine",
           "type": "technology"
         }
@@ -231,12 +237,6 @@
       {
         "skill": {
           "name": "SonarQube",
-          "type": "technology"
-        }
-      },
-      {
-        "skill": {
-          "name": "TypeScript",
           "type": "technology"
         }
       }
@@ -327,11 +327,11 @@
         "type": "technology"
       },
       {
-        "name": "JavaScript",
+        "name": "JAVA",
         "type": "technology"
       },
       {
-        "name": "TypeScript",
+        "name": "JavaScript",
         "type": "technology"
       }
     ],
