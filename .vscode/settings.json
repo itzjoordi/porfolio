@@ -3,12 +3,13 @@
   "editor.rulers": [120],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.markdownlint": "explicit"
   },
   "eslint.alwaysShowStatus": true,
   "eslint.validate": ["typescript", "javascript", "html"],
   "yaml.validate": true,
-  "cSpell.enabledLanguageIds": ["en", "es"],
   "search.exclude": {
     "**/.history": true,
     "**/documentation": true,

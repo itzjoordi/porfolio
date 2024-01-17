@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
 @Component({
   standalone: true,
   imports: [CommonModule],
-  selector: 'app-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss'],
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss'],
 })
-export class AboutMeComponent {}
+export class ProjectsComponent {}

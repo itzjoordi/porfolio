@@ -1,9 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { delay } from 'rxjs/operators';
+import { SizeDetectorComponent } from './components/size-detector/size-detector.component';
+import { DesktopComponent } from './pages/desktop/desktop.component';
+import { MobileComponent } from './pages/mobile/mobile.component';
 import { ResizeService } from './services/resize.service';
 import { ScreenSize } from './types/screen-sizes-enum';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    SizeDetectorComponent,
+    DesktopComponent,
+    MobileComponent,
+  ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -17,6 +18,8 @@ interface Size {
 }
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'app-size-detector',
   templateUrl: './size-detector.component.html',
 })
@@ -65,7 +68,7 @@ export class SizeDetectorComponent implements AfterViewInit {
    */
   constructor(
     private elementRef: ElementRef,
-    private resizeSvc: ResizeService
+    private resizeSvc: ResizeService,
   ) {}
 
   /**
@@ -89,7 +92,7 @@ export class SizeDetectorComponent implements AfterViewInit {
   private detectScreenSize() {
     const currentSize = this.sizes.find((x) => {
       const el = this.elementRef.nativeElement.querySelector(
-        `.${this.prefix}${x.id}`
+        `.${this.prefix}${x.id}`,
       );
       return window.getComputedStyle(el).display !== 'none';
     });

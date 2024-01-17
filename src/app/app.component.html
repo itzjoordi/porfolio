@@ -1,8 +1,5 @@
-<main *ngIf="!isMobileScreen">
-  <app-desktop></app-desktop>
+<main>
+  <app-desktop *ngIf="isMobileScreen === false"></app-desktop>
+  <app-mobile *ngIf="isMobileScreen === true"></app-mobile>
 </main>
-<main *ngIf="isMobileScreen">
-  <app-mobile></app-mobile>
-</main>
-
 <app-size-detector></app-size-detector>
