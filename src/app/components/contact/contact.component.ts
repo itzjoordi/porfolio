@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
+  public year = new Date().getFullYear();
+
   sendMail() {
     window.location.href = 'mailto:jordi.s91@gmail.com';
   }

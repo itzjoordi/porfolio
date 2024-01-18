@@ -48,12 +48,18 @@ html {
 .fp-arrow.fp-next {
   border-width: 38.5px 0 38.5px 34px;
   border-color: transparent transparent transparent rgb(4, 194, 201);
+  margin-right: -35px;
 }
 .fp-arrow.fp-prev {
   border-width: 38.5px 34px 38.5px 0;
   border-color: transparent rgb(4, 194, 201) transparent transparent;
+  margin-left: -35px;
 }
 
 .fa {
   color: var(--white);
+}
+
+.fa-1-5-x {
+  font-size: 1.5rem;
 }

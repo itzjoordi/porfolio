@@ -51,7 +51,6 @@ export class DesktopComponent implements AfterViewInit {
       licenseKey: 'LQXB6-780RK-1U2H9-1KZ3I-GWXMO',
       anchors: ['start', 'aboutme', 'experience', 'contact'],
       menu: '#menu',
-      navigation: true,
       credits: {
         enabled: false,
       },
