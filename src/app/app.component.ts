@@ -30,7 +30,6 @@ export class AppComponent implements OnInit {
     this.resizeService.onResize$.pipe(delay(0)).subscribe((x) => {
       this.resizeService.isMobileScreen =
         x === ScreenSize.XS || x === ScreenSize.SM || x === ScreenSize.MD;
-      console.log('isMobileScreen: ', this.resizeService.isMobileScreen);
     });
   }
 
