@@ -1,9 +1,69 @@
-@import "~fullpage.js/dist/fullpage.min.css";
+@import url(~fullpage.js/dist/fullpage.min.css);
+@import "variables";
 
-body * {
-  font-family: "Martel Sans", sans-serif;
+* {
+  font-family: ui-sans-serif, system-ui, "system-ui", "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--primary-color);
 }
 
 html {
   overflow-x: hidden;
+}
+
+body {
+  background-color: var(--primary-background-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Martel Sans", sans-serif;
+  .header__header {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.background {
+  background-color: var(--secondary-background-color);
+
+  @media (max-width: 576px) {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0rem !important;
+  }
+}
+
+.fp-controlArrow {
+  padding: 0 2%;
+}
+.fp-arrow.fp-next {
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent rgb(4, 194, 201);
+  margin-right: -35px;
+}
+.fp-arrow.fp-prev {
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent rgb(4, 194, 201) transparent transparent;
+  margin-left: -35px;
+}
+
+.fa {
+  color: var(--white);
+}
+
+.fa-1-5-x {
+  font-size: 1.5rem;
 }

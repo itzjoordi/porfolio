@@ -1,19 +1,17 @@
 #menu li {
   display: inline-block;
   margin: 10px;
-  color: #000;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.5);
+  color: var(--primary-color);
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 #menu li.active {
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--secondary-color);
 }
 #menu li a {
   text-decoration: none;
-  color: #000;
+  color: var(--primary-color);
 }
 #menu li a,
 #menu li.active a {

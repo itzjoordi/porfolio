@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class ContactComponent {
+  public year = new Date().getFullYear();
 
   sendMail() {
     window.location.href = 'mailto:jordi.s91@gmail.com';

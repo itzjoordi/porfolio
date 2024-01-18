@@ -1,61 +1,63 @@
+import { CommonModule } from '@angular/common';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import {
-  Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
-  ViewChild,
-} from '@angular/core';
+  AngularFullpageModule,
+  FullpageDirective,
+} from '@fullpage/angular-fullpage';
+import { fullpageOptions } from 'fullpage.js/dist/fullpage.extensions.min';
+import { AboutMeComponent } from 'src/app/components/about-me/about-me.component';
+import { ContactComponent } from 'src/app/components/contact/contact.component';
+import { ExperienceComponent } from 'src/app/components/experience/experience.component';
+import { MainComponent } from 'src/app/components/main/main.component';
+import { ProjectsComponent } from 'src/app/components/projects/projects.component';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    AngularFullpageModule,
+    MainComponent,
+    AboutMeComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    ContactComponent,
+  ],
   selector: 'app-desktop',
   templateUrl: './desktop.component.html',
   styleUrls: ['./desktop.component.scss'],
 })
-export class DesktopComponent implements OnInit {
-  @ViewChild('fullpageRef') fp_directive!: ElementRef;
-  config: any;
-  fullpage_api: any;
+export class DesktopComponent implements AfterViewInit {
+  @ViewChild(FullpageDirective) fullpageDirective!: FullpageDirective;
+  config: fullpageOptions;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  fullpageApi: any;
 
   get isVisible() {
-    if (this.fullpage_api?.getActiveSection().anchor.indexOf('start') >= 0) {
+    if (
+      this.fullpageApi === undefined ||
+      (this.fullpageApi &&
+        this.fullpageApi
+          .getActiveSection()
+          .anchor.toString()
+          .indexOf('start') >= 0)
+    ) {
       return true;
     }
     return false;
   }
 
-  constructor(private renderer: Renderer2) {
-    // this is just an example => for more details on config please visit fullPage.js docs
+  constructor() {
     this.config = {
-      licenseKey: 'YOUR LICENSE KEY HERE',
+      licenseKey: 'LQXB6-780RK-1U2H9-1KZ3I-GWXMO',
       anchors: ['start', 'aboutme', 'experience', 'contact'],
       menu: '#menu',
-      navigation: true,
-      sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', 'FFFFFF', '#FFFFFF'],
-
-      // events callback
-      afterLoad: (origin: any, destination: any, direction: any) => {
-        // console.log(destination);
-      },
-      afterRender: () => {
-        // console.log('afterRender');
-      },
-      afterResize: (width: any, height: any) => {
-        // console.log('afterResize' + width + ' ' + height);
-      },
-      afterSlideLoad: (
-        section: any,
-        origin: any,
-        destination: any,
-        direction: any
-      ) => {
-        // console.log(destination);
+      credits: {
+        enabled: false,
       },
     };
   }
 
-  ngOnInit(): void {}
-
-  getRef(fullPageRef: any) {
-    this.fullpage_api = fullPageRef;
+  ngAfterViewInit() {
+    this.fullpageApi = this.fullpageDirective.fullpageApi;
   }
 }

@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-center my-5">
+  <div class="header__wrapper">
+    <h1 class="header__header">Projects</h1>
+  </div>
+</div>
+<div class="container__cards__grid">
+  <div class="card" *ngFor="let work of workList">
+    <img
+      class="card__img"
+      src="{{ work.image }}"
+      alt="{{ work.title }}"
+      loading="lazy"
+      decoding="async"
+    />
+
+    <div class="card__content">
+      <h3>{{ work.title }}</h3>
+      <p>{{ work.description }}</p>
+      <div class="card__content_tags">
+        <img
+          *ngFor="let icon of work.technologies"
+          src="assets/icons/{{ icon }}.webp"
+          class="icon"
+          alt="icon"
+          decoding="async"
+        />
+      </div>
+      <div *ngIf="work.link && work.repo" class="card__content__btn">
+        <a *ngIf="work.link" href="{{ work.link }}" target="_blanck"
+          >Ver proyecto</a
+        >
+        <a
+          *ngIf="work.repo"
+          href="{{ work.repo }}}}"
+          target="_blanck"
+          class="d-flex align-items-center"
+          >Repositorio&nbsp;<i
+            class="fa fa-github fa-1-5-x"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

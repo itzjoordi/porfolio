@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { AboutMeComponent } from 'src/app/components/about-me/about-me.component';
+import { ContactComponent } from 'src/app/components/contact/contact.component';
+import { ExperienceComponent } from 'src/app/components/experience/experience.component';
+import { MainComponent } from 'src/app/components/main/main.component';
+import { ProjectsComponent } from 'src/app/components/projects/projects.component';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    MainComponent,
+    AboutMeComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    ContactComponent,
+  ],
   selector: 'app-mobile',
   templateUrl: './mobile.component.html',
-  styleUrls: ['./mobile.component.scss']
+  styleUrls: ['./mobile.component.scss'],
 })
-export class MobileComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class MobileComponent {}

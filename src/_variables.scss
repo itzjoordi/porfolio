@@ -1,0 +1,32 @@
+// _variables.scss
+:root {
+  .light-mode {
+    --primary-color: rgb(89, 89, 89);
+    --secondary-color: rgb(4, 194, 201);
+    --main-color: rgba(0, 0, 0, 0.653);
+    --primary-background-color: rgb(255, 255, 255);
+    --secondary-background-color: rgb(245, 245, 245);
+    --card-overlay: #e3e6eeda;
+    --white: rgb(255, 255, 255);
+    --primary-button-color: rgb(4, 194, 201);
+    --secondary-button-color: rgb(255, 255, 255);
+    --shadow: 0px 25px 25px rgba(9, 11, 17, 0.01),
+      0px 25px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
+      0px 4px 9px rgba(9, 11, 17, 0.12);
+  }
+  .dark-mode {
+    --primary-color: rgb(245, 245, 245);
+    --secondary-color: rgb(0, 163, 175);
+    --main-color: rgba(255, 255, 255, 0.9);
+    --primary-background-color: rgb(44, 44, 44);
+    --secondary-background-color: rgb(34, 34, 34);
+    --card-overlay: #1c1c1cda;
+    --white: rgb(255, 255, 255);
+    --primary-button-color: rgb(0, 163, 175);
+    --secondary-button-color: rgb(25, 25, 25);
+    --shadow: 0px 25px 25px rgba(255, 255, 255, 0.01),
+      0px 25px 21px rgba(255, 255, 255, 0.05),
+      0px 16px 16px rgba(255, 255, 255, 0.1),
+      0px 4px 9px rgba(255, 255, 255, 0.12);
+  }
+}

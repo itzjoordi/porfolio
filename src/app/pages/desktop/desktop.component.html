@@ -1,27 +1,30 @@
-<ul id="menu" [class.d-none]="isVisible">
-  <li data-menuanchor="start"><a href="#start">Start</a></li>
-  <li data-menuanchor="aboutme"><a href="#aboutme">About me</a></li>
-  <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
-  <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-</ul>
+<header [class.d-none]="isVisible">
+  <ul id="menu">
+    <li data-menuanchor="start"><a href="#start">Start</a></li>
+    <li data-menuanchor="aboutme"><a href="#aboutme">About me</a></li>
+    <li data-menuanchor="experience">
+      <a href="#experience">Experience and Projects</a>
+    </li>
+    <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
-<div
-  fullpage
-  id="fullpage"
-  [options]="config"
-  (ref)="getRef($event)"
-  #fullpageRef
->
-  <div class="section">
+<main fullpage id="fullpage2" [options]="config">
+  <section class="section">
     <app-main></app-main>
-  </div>
-  <div class="section">
+  </section>
+  <section class="section">
     <app-about-me></app-about-me>
-  </div>
-  <div class="section">
-    <app-experience></app-experience>
-  </div>
-  <div class="section">
+  </section>
+  <section class="section">
+    <div class="slide" data-anchor="experience">
+      <app-experience></app-experience>
+    </div>
+    <div class="slide" data-anchor="projects">
+      <app-projects></app-projects>
+    </div>
+  </section>
+  <section class="section">
     <app-contact></app-contact>
-  </div>
-</div>
+  </section>
+</main>

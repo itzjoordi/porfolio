@@ -1,33 +1,26 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  constructor() {}
-
   ngOnInit(): void {
-    // Some random colors
-    const colors = [
-      '#3CC157',
-      '#2AA7FF',
-      '#1B1B1B',
-      '#FCBC0F',
-      '#F85F36',
-      '#067ea3',
-      '#616161',
-      '#04c2c9',
-    ];
+    this.createAnimateBackground();
+  }
 
+  createAnimateBackground(): void {
     const numBalls = 80;
     const balls = [];
 
     for (let i = 0; i < numBalls; i++) {
-      let ball = document.createElement('div');
+      const ball = document.createElement('div');
       ball.classList.add('ball');
-      ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+      ball.style.background = this.getRandomHEXColor();
       ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
       ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
       ball.style.transform = `scale(${Math.random()})`;
@@ -42,14 +35,14 @@ export class MainComponent implements OnInit {
       document.getElementsByClassName('animation-area')[0].append(ball);
     }
 
-    // Keyframes
-    balls.forEach((el, i, ra) => {
-      let to = {
-        x: Math.random() * (i % 2 === 0 ? -11 : 11),
+    // Animate the balls
+    balls.forEach((element, index) => {
+      const to = {
+        x: Math.random() * (index % 2 === 0 ? -11 : 11),
         y: Math.random() * 12,
       };
 
-      let anim = el.animate(
+      element.animate(
         [
           { transform: 'translate(0, 0)' },
           { transform: `translate(${to.x}rem, ${to.y}rem)` },
@@ -60,8 +53,16 @@ export class MainComponent implements OnInit {
           fill: 'both',
           iterations: Infinity,
           easing: 'ease-in-out',
-        }
+        },
       );
     });
+  }
+
+  getRandomHEXColor(): string {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++)
+      color += letters[Math.floor(Math.random() * 16)];
+    return color;
   }
 }
