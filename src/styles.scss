@@ -12,6 +12,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  background-color: var(--primary-background-color);
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -22,7 +26,7 @@ html {
   justify-content: center;
   font-family: "Martel Sans", sans-serif;
   .header__header {
-    color: rgb(97, 97, 97);
+    color: var(--primary-color);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2rem;

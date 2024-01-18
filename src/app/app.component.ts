@@ -33,4 +33,9 @@ export class AppComponent implements OnInit {
       console.log('isMobileScreen: ', this.resizeService.isMobileScreen);
     });
   }
+
+  toggleMode() {
+    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
+  }
 }

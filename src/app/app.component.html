@@ -1,3 +1,12 @@
+<header
+  (click)="toggleMode()"
+  (keyup)="toggleMode()"
+  class="light__dark__toggle"
+  tabindex="0"
+>
+  <input type="checkbox" (click)="toggleMode()" id="theme-toggle" checked />
+  <label for="theme-toggle"></label>
+</header>
 <main>
   <app-desktop *ngIf="isMobileScreen === false"></app-desktop>
   <app-mobile *ngIf="isMobileScreen === true"></app-mobile>
