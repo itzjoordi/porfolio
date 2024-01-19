@@ -1,5 +1,6 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
 @import "variables";
+@import "reset";
 
 * {
   font-family: ui-sans-serif, system-ui, "system-ui", "Segoe UI",
@@ -14,6 +15,7 @@ html {
 
 body {
   background-color: var(--primary-background-color);
+  overflow-x: hidden;
 }
 
 .cursor-pointer {
