@@ -3,7 +3,19 @@
     <h1 class="header-title">
       Hello! I'm <span class="color-name">Jordi Soler</span>.
     </h1>
-    <h2 class="header-subtitle">Tech Lead Software Engineering</h2>
+    <h2 class="header-subtitle">
+      <span class="typing-text">Frontend Architect</span>
+    </h2>
+    <div
+      class="cta-button"
+      role="button"
+      tabindex="0"
+      (click)="scrollToWork()"
+      (keyup.enter)="scrollToWork()"
+    >
+      <span>View my work</span>
+      <i class="fa fa-chevron-down cta-arrow" aria-hidden="true"></i>
+    </div>
   </div>
   <div class="animation-area"></div>
 </main>

@@ -1,111 +1,115 @@
-.fa-2x {
-  left: -23px;
-  bottom: -5px;
-  position: relative;
-
-  @media (max-width: 576px) {
-    left: -22px;
-    bottom: -7px;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.fa-3x {
-  left: -20px;
-  bottom: 0px;
-  position: relative;
-
-  @media (max-width: 576px) {
-    left: -18px;
-  }
-}
-
-.details-services {
-  color: var(--primary-color);
+.contact-subtitle {
   text-align: center;
+  color: var(--primary-color);
+  opacity: 0.7;
+  font-size: 1.1rem;
+  margin-top: -8px;
+  margin-bottom: 2rem;
+  font-family: "Martel Sans", sans-serif;
 }
 
-.box-align {
+.contact-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: -20px;
-  margin-top: 10px;
-  @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
+  padding: 32px 24px;
+  margin: 8px 0;
+  border-radius: 20px;
+  background: rgba(var(--secondary-color-rgb, 4, 194, 201), 0.04);
+  border: 1px solid rgba(var(--secondary-color-rgb, 4, 194, 201), 0.1);
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  animation: fadeInUp 0.6s ease-out both;
+
+  &:nth-of-type(1) {
+    animation-delay: 0.1s;
+  }
+  &:nth-of-type(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-of-type(3) {
+    animation-delay: 0.3s;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    background: rgba(var(--secondary-color-rgb, 4, 194, 201), 0.1);
+    box-shadow:
+      0 16px 40px rgba(4, 194, 201, 0.2),
+      0 0 60px rgba(4, 194, 201, 0.08);
+    border-color: rgba(4, 194, 201, 0.3);
+  }
+
+  &:hover .contact-icon-circle {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 24px rgba(4, 194, 201, 0.4),
+      0 0 48px rgba(4, 194, 201, 0.15);
+  }
+
+  h2 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .contact-handle {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin: 0;
   }
 }
 
-.hexagon-icon-wrapper {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
-  @media (max-width: 600px) {
-    padding: 30px;
-  }
-  @media (max-width: 760px) {
-    margin-bottom: 20px;
-  }
-  @media (max-width: 576px) {
-    padding: 0px;
-  }
+.contact-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--primary-button-color),
+    rgba(180, 60, 220, 0.7)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
 
-  .hexagono-wrapper {
-    background-color: rgb(4, 194, 201);
-    height: 15em;
-    margin: -3em 0;
-    overflow: hidden;
-    transform: rotate(120deg);
-    visibility: hidden;
-    width: 4.5em;
-    @media (max-width: 600px) {
-      height: 12em;
-      width: 4.5em;
-    }
-    @media (max-width: 576px) {
-      width: 4em;
-    }
-
-    .hexagono-1 {
-      background-color: rgb(4, 194, 201);
-      height: 100%;
-      overflow: hidden;
-      transform: rotate(-60deg);
-      width: 100%;
-    }
-    .hexagono-2 {
-      background-color: rgb(4, 194, 201);
-      height: 100%;
-      transform: rotate(-60deg);
-      visibility: visible;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  .icon {
-    color: white;
-    position: absolute;
-    z-index: 1;
-    font-size: 2rem;
+  .fa {
+    font-size: 1.8rem;
+    color: #fff;
   }
 }
 
-.background {
+footer {
   position: absolute;
   width: 100%;
-  height: 3rem;
   bottom: 0;
-}
+  height: 3rem;
+  color: var(--primary-color);
+  opacity: 0.6;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(var(--secondary-color-rgb, 4, 194, 201), 0.1);
 
-@media (max-width: 576px) {
-  .background {
+  @media (max-width: 576px) {
     position: relative;
+    margin-top: 2rem;
   }
 }

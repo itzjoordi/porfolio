@@ -1,0 +1,63 @@
+<header class="nav-bar">
+  <ul id="menu">
+    <li [class.active]="activeSection === 'start'">
+      <a
+        tabindex="0"
+        (click)="scrollTo('start')"
+        (keyup.enter)="scrollTo('start')"
+        >Start</a
+      >
+    </li>
+    <li [class.active]="activeSection === 'aboutme'">
+      <a
+        tabindex="0"
+        (click)="scrollTo('aboutme')"
+        (keyup.enter)="scrollTo('aboutme')"
+        >About me</a
+      >
+    </li>
+    <li [class.active]="activeSection === 'experience'">
+      <a
+        tabindex="0"
+        (click)="scrollTo('experience')"
+        (keyup.enter)="scrollTo('experience')"
+        >Experience</a
+      >
+    </li>
+    <li [class.active]="activeSection === 'projects'">
+      <a
+        tabindex="0"
+        (click)="scrollTo('projects')"
+        (keyup.enter)="scrollTo('projects')"
+        >Projects</a
+      >
+    </li>
+    <li [class.active]="activeSection === 'contact'">
+      <a
+        tabindex="0"
+        (click)="scrollTo('contact')"
+        (keyup.enter)="scrollTo('contact')"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</header>
+
+<main class="scroll-container" (scroll)="onScroll($event)">
+  <section class="section" data-anchor="start">
+    <app-main></app-main>
+  </section>
+  <section class="section section--content" data-anchor="aboutme">
+    <app-about-me></app-about-me>
+  </section>
+  <section class="section section--content" data-anchor="experience">
+    <app-experience></app-experience>
+  </section>
+  <section class="section section--content" data-anchor="projects">
+    <app-projects></app-projects>
+    <app-personal-projects></app-personal-projects>
+  </section>
+  <section class="section section--content" data-anchor="contact">
+    <app-contact></app-contact>
+  </section>
+</main>

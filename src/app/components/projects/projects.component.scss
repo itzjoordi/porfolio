@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container__cards__grid {
   padding: 0 7rem;
   width: 100%;
@@ -19,6 +30,21 @@
   overflow: hidden;
   margin-bottom: 10px;
   margin-top: 10px;
+  border-radius: 16px;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  animation: fadeInUp 0.6s ease-out both;
+
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
 }
 
 .card__img {
@@ -26,16 +52,17 @@
   height: 280px;
   object-fit: cover;
   background-color: var(--primary-background-color);
+  border-radius: 16px;
 }
 
 .card:hover {
-  box-shadow: var(--shadow);
+  transform: scale(1.03);
+  box-shadow: 0 16px 40px rgba(4, 194, 201, 0.15);
 }
 
 .card:hover .card__content {
   transform: translateY(0);
   opacity: 1;
-  box-shadow: var(--shadow);
 }
 
 .card__content {
@@ -47,10 +74,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: 0.8s ease-in-out;
+  transition: 0.5s ease-in-out;
   opacity: 1;
-  background: var(--card-overlay);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    var(--card-overlay) 30%,
+    var(--card-overlay) 100%
+  );
   transform: translateY(280px);
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
 }
 
 .card__content_tags {
@@ -73,15 +107,26 @@
   margin-top: 20px;
 
   a {
-    padding: 6px 14px;
+    padding: 8px 18px;
     font-size: 1rem;
     color: var(--white);
     font-weight: 600;
     text-transform: capitalize;
-    background: var(--primary-button-color);
-    border: 2px solid var(--white);
-    border-radius: 10px;
+    background: linear-gradient(
+      135deg,
+      var(--primary-button-color),
+      rgba(180, 60, 220, 0.7)
+    );
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
     text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(4, 194, 201, 0.3);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
   }
 }
 

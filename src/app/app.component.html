@@ -7,8 +7,4 @@
   <input type="checkbox" (click)="toggleMode()" id="theme-toggle" checked />
   <label for="theme-toggle"></label>
 </header>
-<main>
-  <app-desktop *ngIf="isMobileScreen === false"></app-desktop>
-  <app-mobile *ngIf="isMobileScreen === true"></app-mobile>
-</main>
-<app-size-detector></app-size-detector>
+<app-home></app-home>

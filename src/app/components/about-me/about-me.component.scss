@@ -1,8 +1,30 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .profile-img {
   width: 16rem;
   height: 16rem;
   padding: 0.3rem;
   border-radius: 50%;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  box-shadow: 0 8px 30px rgba(4, 194, 201, 0.15);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(4, 194, 201, 0.3);
+  }
+
   @media (max-width: 992px) {
     width: 14rem;
     height: 14rem;
@@ -37,6 +59,8 @@
   align-items: center;
   flex-direction: column;
   color: rgba(0, 0, 0, 0.653);
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+
   .label-bold {
     font-size: 18pt;
     font-weight: bold;
@@ -81,6 +105,19 @@
   justify-content: center;
   margin-bottom: -20px;
   margin-top: 10px;
+  padding: 24px 16px;
+  border-radius: 16px;
+  background: rgba(var(--secondary-color-rgb, 4, 194, 201), 0.04);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--secondary-color-rgb, 4, 194, 201), 0.08);
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    background: rgba(var(--secondary-color-rgb, 4, 194, 201), 0.08);
+    box-shadow: 0 12px 30px rgba(4, 194, 201, 0.12);
+  }
+
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
@@ -94,6 +131,12 @@
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
   @media (max-width: 600px) {
     padding: 30px;
   }

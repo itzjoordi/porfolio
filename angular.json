@@ -26,9 +26,7 @@
             "allowedCommonJsDependencies": ["lodash"],
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss", "src/reset.scss"],
-            "scripts": [
-              "node_modules/fullpage.js/dist/fullpage.extensions.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

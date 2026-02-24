@@ -18,8 +18,32 @@ import { ProjectsComponent } from 'src/app/components/projects/projects.componen
     PersonalProjectsComponent,
     ContactComponent,
   ],
-  selector: 'app-mobile',
-  templateUrl: './mobile.component.html',
-  styleUrls: ['./mobile.component.scss'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
-export class MobileComponent {}
+export class HomeComponent {
+  activeSection = 'start';
+
+  onScroll(event: Event) {
+    const container = event.target as HTMLElement;
+    const sections = container.querySelectorAll('.section');
+    const scrollTop = container.scrollTop;
+    const viewportHeight = container.clientHeight;
+
+    sections.forEach((section) => {
+      const el = section as HTMLElement;
+      const sectionTop = el.offsetTop;
+      if (scrollTop >= sectionTop - viewportHeight / 2) {
+        this.activeSection = el.dataset['anchor'] || 'start';
+      }
+    });
+  }
+
+  scrollTo(anchor: string) {
+    const el = document.querySelector(`[data-anchor="${anchor}"]`);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}
