@@ -42,10 +42,7 @@
   list-style: none;
 
   @media (max-width: 576px) {
-    top: auto;
-    bottom: 12px;
-    padding: 4px 6px;
-    gap: 2px;
+    display: none;
   }
 }
 

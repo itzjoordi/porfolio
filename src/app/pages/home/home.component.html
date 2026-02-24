@@ -47,17 +47,40 @@
   <section class="section" data-anchor="start">
     <app-main></app-main>
   </section>
-  <section class="section section--content" data-anchor="aboutme">
-    <app-about-me></app-about-me>
-  </section>
-  <section class="section section--content" data-anchor="experience">
-    <app-experience></app-experience>
-  </section>
-  <section class="section section--content" data-anchor="projects">
-    <app-projects></app-projects>
-    <app-personal-projects></app-personal-projects>
-  </section>
-  <section class="section section--content" data-anchor="contact">
-    <app-contact></app-contact>
-  </section>
+
+  @defer (on viewport) {
+    <section class="section section--content" data-anchor="aboutme">
+      <app-about-me></app-about-me>
+    </section>
+  } @placeholder {
+    <section class="section section--content" data-anchor="aboutme"></section>
+  }
+
+  @defer (on viewport) {
+    <section class="section section--content" data-anchor="experience">
+      <app-experience></app-experience>
+    </section>
+  } @placeholder {
+    <section
+      class="section section--content"
+      data-anchor="experience"
+    ></section>
+  }
+
+  @defer (on viewport) {
+    <section class="section section--content" data-anchor="projects">
+      <app-projects></app-projects>
+      <app-personal-projects></app-personal-projects>
+    </section>
+  } @placeholder {
+    <section class="section section--content" data-anchor="projects"></section>
+  }
+
+  @defer (on viewport) {
+    <section class="section section--content" data-anchor="contact">
+      <app-contact></app-contact>
+    </section>
+  } @placeholder {
+    <section class="section section--content" data-anchor="contact"></section>
+  }
 </main>

@@ -1,10 +1,8 @@
-@import "variables";
-@import "reset";
+@use "variables";
+@use "reset";
+@use "grid";
 
 * {
-  font-family: "Inter", ui-sans-serif, system-ui, "system-ui", "Segoe UI",
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: var(--primary-color);
 }
 
@@ -13,6 +11,10 @@ html {
 }
 
 body {
+  font-family:
+    "Inter", ui-sans-serif, system-ui, "system-ui", "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: var(--primary-background-color);
   overflow-x: hidden;
   transition:
